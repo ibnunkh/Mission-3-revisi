@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./styles/register.css" />
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <img src="./images/Logo-videobelajar.svg" class="navbar-logo"/>
+        </nav>
+    </header>
+
+    <main>
+        <div class="registerContainer">
+            <div class="heading">                
+                <h3 class="title">Pendaftaran Akun</h3>
+                <p class="description">Yuk, daftarkan akunmu sekarang juga!</p>
+            </div>    
+            <form class="form">
+                <fieldset class="formGroup">
+                    <div class="formField">
+                        <label for="fullname" class="formLabel">Nama Lengkap <span>*</span></label>
+                        <input type="text" id="fullname" name="fullname" class="formInput" required/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="email" class="formLabel">E-Mail <span>*</span></label>
+                        <input type="email" id="email" name="email" class="formInput" required/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="numberPhone" class="formLabel">No. Hp <span>*</span></label>
+                    </div>
+
+                    <div class="numberPhone">
+                        <div class="region">
+                            <label for="flag" class="flag">
+                                <img class="indonesiaFlag" src="./images/Indonesia (ID).svg" alt="IndonesiaFlag"/>
+                            </label>
+                            <select name="code" id="code">
+                                <option value="+62">+62</option>
+                            </select>
+                        </div>
+                        <input type="tel" id="numberPhone" name="numberPhone" class="inputNumber" required/>
+                    </div>
+                    
+                    <div class="formField">
+                        <label for="password" class="formLabel">Kata Sandi <span>*</span></label>
+                        <input type="password" id="password" name="password" class="formInput" required/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="confirmPassword" class="formLabel">Konfirmasi Kata Sandi <span>*</span></label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="formInput" required/>
+                    </div>
+                </fieldset>
+
+                <div class="otherAction">
+                    <a href="#">Lupa Password?</a>
+                </div>
+
+                <div class="formButton">
+                    <button type="submit" class="btn-daftar">Daftar</button>
+                    <button type="submit" class="btn-masuk">Masuk</button>
+                </div>
+
+                <div class="divider">
+                    <hr>
+                    <span>atau</span>
+                    <hr>
+                </div>
+
+                <div class="formButton">
+                    <button type="button" class="btn-google">
+                        <img class="googleIcon" src="./images/google-icon.svg" alt="google-icon" width="16"/>
+                        <span>Daftar dengan Google</span>
+                    </button>
+                </div>
+            </form> 
+        </div>
+    </main>
+
+</body>
+</html>

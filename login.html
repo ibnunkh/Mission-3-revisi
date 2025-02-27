@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./styles/login.css"/>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="./images/Logo-videobelajar.svg" class="navbar-logo"/>
+        </nav>
+    </header>
+
+    <main>
+        <div class="loginContainer">
+            <div class="heading">
+                <h3 class="title">Masuk ke Akun</h3>
+                <p class="description">Yuk, lanjutin belajarmu di videobelajar.</p>
+            </div>
+            <form class="form">
+                <fieldset class="formGroup">
+                    <div class="formField">
+                        <label for="email" class="formLabel">E-Mail <span>*</span></label>
+                        <input type="email" id="email" name="email" class="formInput" required/>
+                    </div>
+
+                    <div class="formField">
+                        <label for="password" class="formLabel">Kata Sandi <span>*</span></label>
+                        <input type="password" id="password" name="password" class="formInput" required/>
+                    </div>
+                </fieldset>
+
+                <div class="otherAction">
+                    <a href="#">Lupa Password?</a>
+                </div>
+
+                <div class="formButton">
+                    <button type="submit" class="btn-masuk">Masuk</button>
+                    <button type="submit" class="btn-daftar">Daftar</button>
+                </div>
+
+                <div class="divider">
+                <hr>
+                    <span>atau</span>
+                <hr>                    
+                </div>
+
+                <div class="formButton">
+                    <button type="button" class="btn-google">
+                        <img class="googleIcon" src="./images/google-icon.svg" alt="google-icon" width="16"/>
+                        <span>Masuk dengan Google</span>
+                    </button>
+                </div>
+            </form> 
+        </div>
+    </main>
+
+</body>
+</html>
